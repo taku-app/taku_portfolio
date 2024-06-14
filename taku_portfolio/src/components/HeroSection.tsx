@@ -1,9 +1,8 @@
 import Image from "next/image";
 import HeroIntroduction from "@/components/HeroIntroduction";
-import nextConfig from "../../next.config.mjs";
-const BASE_PATH = nextConfig.basePath || "";
 
 export default function HeroSection() {
+    const BASE_PATH = process.env.BASE_PATH || "";
     return (
         <>
             <section className="hero-section bg-gray-900 py-16">
