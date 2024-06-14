@@ -5,11 +5,17 @@ import SNSLinks from "@/components/SNSLinks";
 
 export default function HeroSection() {
     const BASE_PATH = process.env.BASE_PATH || "";
+
     return (
         <>
-            <section className="hero-section bg-gray-900 py-16">
-                <div className="container mx-auto flex flex-col lg:flex-row h-auto lg:h-[650px] gap-8">
-                    <div
+            <header className="bg-gray-900 text-white p-4 fixed top-0 w-full z-10">
+                <div className="container mx-auto flex justify-between items-center">
+                    <h1 className="text-2xl font-bold">My Portfolio</h1>
+                </div>
+            </header>
+            <section className="hero-section bg-gray-900 min-h-screen flex items-center justify-center py-16 mt-15">
+                <div className="container mx-auto flex flex-col lg:flex-row h-auto lg:h-[600px] gap-8">
+                <div
                         className="hero-title-wrapper flex-1 flex items-center justify-center bg-white p-10 shadow-2xl rounded-lg">
                         <h1 className="text-5xl font-extrabold text-gray-900">Welcome to My Portfolio</h1>
                     </div>
