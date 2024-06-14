@@ -12,7 +12,7 @@ export default function HeroIntroduction() {
                     keen eye for detail, I have contributed to various projects that showcase my skills and dedication
                     to the field.</p>
 
-                <h2 className="text-3xl font-semibold mb-4 text-gray-900">Professional Experience!</h2>
+                <h2 className="text-3xl font-semibold mb-4 text-gray-900">Professional Experience!!</h2>
 
                 <div className="mb-8">
                     <h3 className="text-2xl font-semibold mb-2 text-gray-900">Hospital Transport Robot Monitoring
