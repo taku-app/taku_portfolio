@@ -1,6 +1,7 @@
 import Image from "next/image";
-import HeroImage from "/profile.jpeg";
 import HeroIntroduction from "@/components/HeroIntroduction";
+import nextConfig from "../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
 
 export default function HeroSection() {
     return (
@@ -13,7 +14,7 @@ export default function HeroSection() {
                     </div>
                     <div aria-label="Hero Image Wrapper"
                          className="relative flex-1 h-80 lg:h-auto rounded-lg overflow-hidden shadow-2xl">
-                        <Image className="hero-image object-cover" src="/profile.jpeg" layout="fill" alt="Hero Image"/>
+                        <Image className="hero-image object-cover" src={`${BASE_PATH}/profile.jpeg`} layout="fill" alt="Hero Image"/>
                     </div>
                     <div aria-label="Introduction Wrapper"
                          className="introduction-wrapper flex-1 h-auto overflow-scroll bg-white p-10 shadow-2xl rounded-lg">
